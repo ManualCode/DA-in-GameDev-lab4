@@ -47,15 +47,19 @@
 - Я заполнил Google-Таблицу данными об эпохах и визуализировал их с помощью графиков.
 
 1. OR (Логическое сложение(ИЛИ)):
+
 ![image](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/69ca3a81-38cb-440b-9e12-c61f3b973d93)
 
 2. AND (Логическое умножение(И)):
+
 ![image](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/a5c541a4-c52d-4ac7-b89d-7016fe2623f9)
 
 3. NAND (Инвертированное Логическое умножение(НЕ И)):
+
 ![image](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/f9057b84-6518-48b5-b757-720dec2f9e0e)
 
 4. XOR (Исключающая Логическая сумма((ИЛИ) и (НЕ И))):
+
 ![image](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/10a39ef5-f540-4f6a-88d8-bfb961f473b3)
 
 ## Задание 3
