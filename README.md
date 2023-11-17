@@ -64,23 +64,73 @@
 
 ## Задание 3
 ### Визуализировать работу персептрона с помощью физуальной модели на сцене Unity.
+Ход работы: 
+- Создал сцену в Unity, добавил плоскость и несколько кубов;
+- Модефицировал код в Perceptron.cs и накинул на кубы;
+- Продублировал сцену на каждую логическую операцию;
 
-1. Тест OR:
+Код дописанный в Perceptron.cs:
+Для каждой логической операции нужно менять условие (test == ?).
+```C#
+ private void OnCollisionEnter(Collision collision)
+ {
+     var test = CalcOutput(0, 0);
+     if (test == 0 && collision.gameObject.tag == "Cube2" && collision.gameObject.tag != "Floor")
+     {
+         collision.gameObject.GetComponent<Renderer>().material.color = Color.green;
+         gameObject.GetComponent<Renderer>().material.color = Color.green;
+     }
+     else if (collision.gameObject.tag == "Cube2" && collision.gameObject.tag != "Floor")
+     {
+         collision.gameObject.GetComponent<Renderer>().material.color = Color.red;
+         gameObject.GetComponent<Renderer>().material.color = Color.red;
+     };
+     test = CalcOutput(0, 1);
+     if (test == 0 && collision.gameObject.tag == "Cube4" && collision.gameObject.tag != "Floor")
+     {
+         collision.gameObject.GetComponent<Renderer>().material.color = Color.green;
+         gameObject.GetComponent<Renderer>().material.color = Color.green;
+     }
+     else if (collision.gameObject.tag == "Cube4" && collision.gameObject.tag != "Floor")
+     {
+         collision.gameObject.GetComponent<Renderer>().material.color = Color.red;
+         gameObject.GetComponent<Renderer>().material.color = Color.red;
+     };
+     test = CalcOutput(1, 0);
+     if (test == 0 && collision.gameObject.tag == "Cube6" && collision.gameObject.tag != "Floor")
+     {
+         collision.gameObject.GetComponent<Renderer>().material.color = Color.green;
+         gameObject.GetComponent<Renderer>().material.color = Color.green;
+     }
+     else if (collision.gameObject.tag == "Cube6" && collision.gameObject.tag != "Floor")
+     {
+         collision.gameObject.GetComponent<Renderer>().material.color = Color.red;
+         gameObject.GetComponent<Renderer>().material.color = Color.red;
+     };
+     test = CalcOutput(1, 1);
+     if (test == 1 && collision.gameObject.tag == "Cube8" && collision.gameObject.tag != "Floor")
+     {
+         collision.gameObject.GetComponent<Renderer>().material.color = Color.green;
+         gameObject.GetComponent<Renderer>().material.color = Color.green;
+     }
+     else if (collision.gameObject.tag == "Cube8" && collision.gameObject.tag != "Floor")
+     {
+         collision.gameObject.GetComponent<Renderer>().material.color = Color.red;
+         gameObject.GetComponent<Renderer>().material.color = Color.red;
+     };
+ }
+```
 
-![OR](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/201545aa-2a14-4136-b887-c24cb088c3b0)
-2. Тест AND:
+1, 2, 3. Тест OR, AND, NAND:
+Не имеет смысла втавлять отдельные gif-ки на каждую логтческую операцию, т.к результат одинаков
 
-![AND](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/1fa95746-eee5-4957-bfc8-5d5b36d85221)
-3. Тест NAND:
-
-![NAND](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/fb3609c4-7fa5-46b9-ad6a-adc901f25f61)
+![nteTesRRGt_edited](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/3697d0cc-16aa-4274-b12c-7007d5b01b7d)
 4. Тест XOR:
 
 ![XOR](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/b71e1e83-3ad5-4ab6-b1ad-38363766f873)
 
 ## Выводы
-
-Абзац умных слов о том, что было сделано и что было узнано.
+В ходе данной лабораторной работы я познакомился с персептроном. Реализовал и визуализировал его в Unity, а так же сделал выводы о корректности его работы на примере функций OR, AND, NAND, XOR.
 
 | Plugin | README |
 | ------ | ------ |
