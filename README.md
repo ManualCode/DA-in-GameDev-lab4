@@ -1,4 +1,4 @@
-# АНАЛИЗ ДАННЫХ И ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ [in GameDev]
+![OR](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/04dd4e15-3b93-4afb-9fec-57210f3b43f2)# АНАЛИЗ ДАННЫХ И ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ [in GameDev]
 Отчет по лабораторной работе #4 выполнил(а):
 - Тимохов Кирилл Александрович
 - РИ220910
@@ -42,51 +42,38 @@
 ![image](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/8d7ef6fa-a944-4cc4-8fd1-c7fd82dc7199)
 
 ## Задание 2
-### Должна ли величина loss стремиться к нулю при изменении исходных данных? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ.
+### Построить графики зависимости количества эпох от ошибки обучения. Указать от чего зависит необходимое количество эпох обучения.
 
-1
+Ход работы:
+- Я заполнил Google-Таблицу данными об эпохах и визуализировал их с помощью графиков.
+
+1. OR (Логическое сложение(ИЛИ)):
 ![image](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/69ca3a81-38cb-440b-9e12-c61f3b973d93)
 
-2
+2. AND (Логическое умножение(И)):
 ![image](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/a5c541a4-c52d-4ac7-b89d-7016fe2623f9)
 
-3
+3. NAND (Инвертированное Логическое умножение(НЕ И)):
 ![image](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/f9057b84-6518-48b5-b757-720dec2f9e0e)
 
-4
+4. XOR (Исключающая Логическая сумма((ИЛИ) и (НЕ И))):
 ![image](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/10a39ef5-f540-4f6a-88d8-bfb961f473b3)
 
-
-
-
-
 ## Задание 3
-### Какова роль параметра Lr? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ. В качестве эксперимента можете изменить значение параметра.
+### Визуализировать работу персептрона с помощью физуальной модели на сцене Unity.
 
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
+1. Тест OR:
 
-```py
+![OR](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/201545aa-2a14-4136-b887-c24cb088c3b0)
+2. Тест AND:
 
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
+![AND](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/1fa95746-eee5-4957-bfc8-5d5b36d85221)
+3. Тест NAND:
 
-```
+![NAND](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/fb3609c4-7fa5-46b9-ad6a-adc901f25f61)
+4. Тест XOR:
+
+![XOR](https://github.com/ManualCode/DA-in-GameDev-lab4/assets/120582775/b71e1e83-3ad5-4ab6-b1ad-38363766f873)
 
 ## Выводы
 
